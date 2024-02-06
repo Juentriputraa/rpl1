@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        // Memanggil fungsi dengan parameter nama
+        System.out.println(tukarNama("Anton"));
+        System.out.println(tukarNama(null));
+        System.out.println(tukarNama("Dendy"));
+    }
+
+    // Fungsi untuk menukar nama
+    public static String tukarNama(String nama) {
+        // Jika nama tidak null, maka tampilkan pesan sesuai dengan nama
+        if (nama != null) {
+            return "Satu untuk " + nama + ", satu untuk saya.";
+        } else { // Jika nama null, maka tampilkan pesan khusus
+            return "Satu untuk kamu, satu untuk saya.";
+        }
+    }
+}
